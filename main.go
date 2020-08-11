@@ -44,10 +44,8 @@ func SendMessageHandle(h hub.HubService) func(http.ResponseWriter, *http.Request
 }
 
 func GetAllMessage(w http.ResponseWriter, r *http.Request) {
-
 	w.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(w).Encode(model.Text)
-
 }
 
 func main() {
